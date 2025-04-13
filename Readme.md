@@ -30,7 +30,7 @@ It combines modern features, an elegant UI, and smooth functionality to create a
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/shoestop.git
+   git clone https://github.com/pranayvips/shoes.git
    cd shoestop
 
 
@@ -59,4 +59,4 @@ Feel free to fork the repo and submit a pull request. 👟✨
 This project is licensed under the LOL License.
 
 Created with 💙 by Pranay
-🔗 LinkedIn | 🌐 Portfolio
+🔗 [Linked In](https://www.linkedin.com/in/pranay-prasad-/) | 🌐 [Portfolio](https://portfolio-new-one-eta.vercel.app/)
