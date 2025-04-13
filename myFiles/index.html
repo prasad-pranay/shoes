@@ -1,0 +1,391 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/changes.css">
+    <link rel="shortcut icon" type="x-icon" href="/logo1.png">
+    <title>Sneakers Store</title>
+</head>
+
+<body>
+    <nav id = "nav">
+        <!-- <div class="navTop"> -->
+            <div class="navItem">
+                <img src="/logo1.png" alt="" class = logo>
+            </div>
+            <div class="navBottom">
+                <h3 class="menuItem" onclick="swiper.slideTo(0);">AIR FORCE</h3>
+                <h3 class="menuItem" onclick="swiper.slideTo(1);">JORDAN</h3>
+                <h3 class="menuItem" onclick="swiper.slideTo(2);">BLAZER</h3>
+                <h3 class="menuItem" onclick="swiper.slideTo(3);">CRATER</h3>
+                <h3 class="menuItem" onclick="swiper.slideTo(4);">HIPPIE</h3>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search...." class="searchInput" list="shoes">
+                    <datalist id="shoes">
+                        <option value="AIR FORCE">
+                        <option value="JORDAN">
+                        <option value="BLAZER">
+                        <option value="CRATER">
+                        <option value="HIPPIE">
+                      </datalist>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="searchIcon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="theme" onclick="switchTheme()">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+              </svg>
+            <button id="cart"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+            <h4 id="cart-count">1</h4>
+              <div class="cart-container cart-empty">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                  </svg>
+                  Cart</h1>
+                  <img src="/empty.gif" class="empty">
+                  <h6 class="empty">Your Cart is Empty</h6>
+                  <div class="items">
+                    <!-- <div>
+                        <img src="/air.png" alt="">
+                        <h3>AIR FORCE</h3>
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select>
+                        <p><span></span><span class="total-count"></span></p>
+                    </div> -->
+                  </div>
+                  <div>
+                    <h5>Total : <span id="total">0</span></h5>
+                    <a onclick="proceedPayment()">Proceed To Checkout</a>
+                  </div>
+              </div>
+              </button>
+            <div class="navItem" id="logged-out">
+                <!-- <span class="limitedOffer">Limited Offer!</span> -->
+                 <button id="mobile"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg>
+                  </button>
+                 <button onclick="signIn()">Sign In</button>
+                 <button onclick="signUp()">Sign Up</button>
+            </div>
+            <div class="navItem" id="logged-in">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg>
+                  <span></span></h1>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onclick="signOut()" style="height: 30px;cursor: pointer;" id="log-out">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
+                  </svg>
+            </div>
+            <button id="menu" onclick="openMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+              
+            
+       
+    </nav>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/air.png" alt="" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">AIR FORCE </br> NEW </br> SEASON</h1>
+                <h2 class="sliderPrice">₹24999</h2>
+                <a href="#product">
+                <button class="buyButton">VIEW</button>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <img src="/jordan.png" alt="" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">JORDAN </br> NEW </br> SEASON</h1>
+                <h2 class="sliderPrice">₹14999</h2>
+                <a href="#product">
+                <button class="buyButton">VIEW</button>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <img src="/blazer.png" alt="" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">BLAZER </br> NEW </br> SEASON</h1>
+                <h2 class="sliderPrice">₹19999</h2>
+                <a href="#product">
+                <button class="buyButton">VIEW</button>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <img src="/crater.png" alt="" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">CRATER </br> NEW </br> SEASON</h1>
+                <h2 class="sliderPrice">₹9999</h2>
+                <a href="#product">
+                <button class="buyButton">VIEW</button>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <img src="/hippie.png" alt="" class="sliderImg">
+                <div class="slideBg"></div>
+                <h1 class="sliderTitle">HIPPIE </br> NEW </br> SEASON</h1>
+                <h2 class="sliderPrice">₹14999</h2>
+                <a href="#product">
+                <button class="buyButton">VIEW</button>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next" id="next"></div>
+    </div>
+
+
+    <div class="features">
+        <div class="feature">
+            <img src="/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img src="/return.png" alt="" class="featureIcon">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img src="/gift.png" alt="" class="featureIcon">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img src="/contact.png" alt="" class="featureIcon">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="/air.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h1 class="productPrice">₹25000</h1>
+            <p class="productDesc">Nike, born from innovation and the spirit of competition, has been revolutionizing sportswear and sneakers since its inception. Known for its iconic Swoosh and commitment to excellence, Nike continues to inspire athletes and trendsetters worldwide.</p>
+
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>
+            </div>
+            <button class="productButton">ADD TO CART</button>
+        </div>
+        <div class="payment">
+            <div class="savedAddresses">
+                <h1>Ready To Order</h1>
+
+                <h2>Choose Your Address</h2>
+                <div class="address">
+                    <input type="radio" checked>
+                    <h1>Pranay Prasad</h1>
+                    <h2>+917011417423</h2>
+                    <h3>Thane railway station near bus stand chowk subharsh chowsk</h3>
+                </div>
+                <h2>Choose Payment Method</h2>
+                <div class="card">
+                    <img src="/card.jpg" alt="">
+                    <h3>1234123413241234</h3>
+                    <h5>09 / 26</h5>
+                    <h4>Pranay Prasad</h4>
+                    <p>188</p>
+                </div>
+                <nav>
+                    <button onclick="document.getElementsByClassName('savedAddresses')[0].style.display = 'none'">Add Payment Method</button>
+                    <button onclick="savedCardSaveOrder()">Place Order ></button>
+                </nav>
+            </div>
+                <h1 class="payTitle">Personal Information</h1>
+                <label> Name and Surname</label>
+                <input type="text" placeholder="jai" class="payInput">
+                <label>Phone Number</label>
+                <input type="text" placeholder="+91 98765 XXXXX" class="payInput">
+                <label>Address</label>
+                <input type="text" placeholder="400607, Thane" class="payInput">
+
+                <h1 class="payTitle">Card Information</h1>
+                <div class="cardIcons">
+                    <img src="/visa.png" alt="" width="40" class="cardIcon">
+                    <img src="/master.png" alt="" width="40" class="cardIcon">
+                </div>
+                <input type="number" class="payInput card-number" placeholder="Card Information"  onkeyup="checkValidation(event,16)">
+                <div class="cardInfo">
+                    <input type="number" placeholder="mm" class="payInput sm" onkeyup="checkValidation(event,2,12)">
+                    <input type="number" placeholder="yyyy" class="payInput sm"  onkeyup="checkValidation(event,2,40)">
+                    <input type="password" placeholder="cvv" class="payInput sm"  onkeyup="checkValidation(event,3)">
+                </div>
+                <button class="payButton" onclick="saveOrder()">Checkout!</button>
+            <span class="close">X</span>
+        </div>   
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">NEW ARRIVALS FOR SUMMER</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <div class="login">
+        <h2>Welcome to Your Website <span>Log in to access your personalized dashboard and explore all the features we’ve built just for you.</span></h2>
+        <img src="/air.png" alt="">
+        <p onclick="closeLogin()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          </p>
+        <h1>Login</h1>
+        <input type="text" placeholder="Your Name">
+        <input type="number" placeholder="Enter your age" value="18">
+        <input type="password" placeholder="Your Password">
+        <h3 id="forgot">Forgot Password?</h3>
+        <div>
+            <button onclick="singStatus ? signIn() : signUp()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+            </svg>
+        </button>
+        <button onclick="saveData()">Sign In</button>
+    </div>
+    </div>
+    <div class="order">
+        <div>
+            <img src="order.gif" alt="">
+            <h1>Order Placed Successfully!</h1>
+            <p>Closing in <span>3</span>...</p>
+        </div>
+    </div>
+    <div class="pinky">
+        <div>
+
+            <img src="promise.gif" alt="">
+            <h1>Do You Pinky Promise Me This is Your Account!</h1>
+            <h2>
+                <button id="pinky-no">No 😔</button><button id="pinky-yes">Yes, I do ❤️</button>
+            </h2>
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@gmail.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="ficons">
+                    <img src="/facebook.png" alt="" class="fIcon">
+                    <img src="/twitter.png" alt="" class="fIcon">
+                    <img src="/instagram.png" alt="" class="fIcon">
+                    <img src="/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@lugia. All rights reserved. 2025.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/chagnes.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
