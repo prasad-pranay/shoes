@@ -33,8 +33,9 @@ It combines modern features, an elegant UI, and smooth functionality to create a
    git clone https://github.com/pranayvips/shoes.git
    cd shoestop
 
+---
 
-📸 Screenshots
+## 📸 Screenshots
 
 ### 🏠 Home Page
 ![Home Page](screenshot/0.png)
