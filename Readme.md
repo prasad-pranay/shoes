@@ -1,63 +1,92 @@
-# 👟 ShoeStop — Online Shoe Selling Website
+# 👟 ShoeStop — Modern Online Shoe Store
 
-Welcome to **ShoeStop**, your one-stop online shop for the latest and trendiest shoes!  
-This project is a fully functional web application built with **Node.js**, **HTML**, **CSS**, and **JavaScript**.  
-It combines modern features, an elegant UI, and smooth functionality to create an amazing shopping experience. ✨
+**ShoeStop** is a full-stack web application for online shoe shopping, designed with a clean UI and smooth user experience in mind.  
+It allows users to browse products, manage their cart, switch themes, and proceed toward checkout — all in a simple and responsive interface.
+
+This project focuses on **frontend interaction**, **basic backend integration**, and **modern UI practices**.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-- 🛍️ **Product Slider** — Browse featured shoes in style with a smooth image slider.
-- 🛒 **Shopping Cart** — Add, view, and remove products from your cart in real time.
-- 👤 **User Authentication** — Sign up and log in securely.
-- 🎨 **Theme Switcher** — Toggle between light and dark themes for a personalized experience.
-- 💅 **Elegant UI** — Clean, modern design that's responsive and user-friendly.
+- 🛍️ **Product Showcase & Slider**  
+  Smooth product slider to highlight featured shoes.
+
+- 🛒 **Dynamic Shopping Cart**  
+  Add, remove, and manage products in real time.
+
+- 👤 **User Authentication**  
+  Basic sign-up and login functionality.
+
+- 🌗 **Light / Dark Theme Toggle**  
+  Personalized viewing experience.
+
+- 📱 **Responsive Design**  
+  Works well across desktops, tablets, and mobile devices.
+
+- 🎨 **Minimal & Modern UI**  
+  Clean layout with focus on usability and aesthetics.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend        | Backend  |
-|----------------|----------|
-| HTML           | Node.js  |
-| CSS (custom)   | Express  |
-| JavaScript     |          |
+| Layer      | Technologies Used |
+|------------|------------------|
+| Frontend   | HTML, CSS, JavaScript |
+| Backend    | Node.js, Express |
+| Styling    | Custom CSS |
+| Runtime    | Node.js |
 
 ---
 
-## 🔧 Installation
+## 📸 Screenshots Overview
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/pranayvips/shoes.git
-   cd shoestop
+| Screen | Preview | Description |
+|------|--------|-------------|
+| **Home Page** | ![Home](screenshot/0.png) | Landing page showcasing featured shoes with a clean layout and slider. |
+| **Cart Page** | ![Cart](screenshot/1.png) | Displays selected products with real-time cart updates. |
+| **Advertisement Section** | ![Ad](screenshot/2.png) | Promotional section highlighting offers and featured items. |
+| **Footer** | ![Footer](screenshot/3.png) | Contains navigation links and branding elements. |
+| **Payment Page** | ![Payment](screenshot/4.png) | Checkout interface for completing purchases. |
 
 ---
 
-## 📸 Screenshots
+## 🚀 Getting Started
 
-### 🏠 Home Page
-![Home Page](screenshot/0.png)
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/prasad-pranay/shoes.git
+cd shoestop
+```
 
-### 🛒 Cart Page
-![Cart Page](screenshot/1.png)
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
 
-### 🌙 Advertisment Page
-![Advertisment Page](screenshot/2.png)
+### 3️⃣ Run the Project
+```bash
+npm start
+```
 
-### 🙌 Footer
-![Footer](screenshot/3.png)
+---
 
-### 🤑 Payment Page
-![Payment Page](screenshot/4.png)
+## 🤝 Contributing
 
-🤝 Contributing
-Contributions are welcome!
-Feel free to fork the repo and submit a pull request. 👟✨
+Contributions are welcome!  
+Feel free to fork the repository and submit a pull request.
 
-📄 License
-This project is licensed under the LOL License.
+---
 
-Created with 💙 by Pranay
-🔗 [Linked In](https://www.linkedin.com/in/pranay-prasad-/) | 🌐 [Portfolio](https://portfolio-new-one-eta.vercel.app/)
+## 📄 License
+
+This project is licensed under the **LOL License** 😄 (Just Kidding)  
+(Use freely for learning and experimentation.)
+
+---
+
+## 👨‍💻 Author
+
+**Pranay Prasad**  
+Created with 💙 and lots of debugging ☕
